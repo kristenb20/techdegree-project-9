@@ -1,0 +1,104 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar,
+.navbar-brand,
+.nav-link {
+  background-color: #8f4cb9;
+  color: #fff;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+  cursor: default;
+}
+
+.nav-link:hover {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.nav-link {
+  font-weight: 200;
+}
+
+.navbar-toggler {
+  outline: none !important
+}
+
+.jumbotron {
+  background: rgb(23,162,184);
+  background: linear-gradient(0deg, rgba(23,162,184,1) 0%, rgba(143,76,185,1) 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.display-4 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.btn,
+.btn-info {
+  margin: 20px 0px 20px 0px;
+  padding: 8px 30px;
+}
+
+.modal-btn,
+.btn-secondary {
+  margin: 3px;
+}
+
+.main-footer {
+	text-align: center;
+	padding: 2em;
+  background: #17a2b8;
+  color: #fff;
+}
+
+.phone,
+.email {
+	font-weight: 600;
+	margin-left: 10px;
+  color: #fff;
+}
+
+.phone:hover {
+  color: #fff;
+}
+
+.email:hover {
+  color: #fff;
+}
+
+.fab {
+  font-size: 32px;
+  color: #fff;
+  padding: 7px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.name-btm {
+	font-weight: 400;
+	float: left;
+	color: #fff;
+}
+
+.top a {
+	font-weight: 400;
+	float: right;
+  color: #fff;
+}
+
+.footer-nav {
+  background-color: #3f8b9e;
+}

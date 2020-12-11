@@ -1,0 +1,37 @@
+/* =====================================
+   Page Styles
+======================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0 45px;
+}
+
+input {
+  padding: 10px;
+  margin: 25px;
+  width: 500px;
+  border: 2px solid #e0dcdc;
+  border-radius: 5px;
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+}
+
+/* =====================================
+   Grid Layout
+======================================== */
+
+.gallery {
+	max-width: 875px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  grid-template-rows: 200px;
+  grid-gap: 25px;
+	margin:0 auto
+}

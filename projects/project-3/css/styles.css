@@ -1,0 +1,268 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Merriweather', serif;
+  margin: 0;
+  background-color: #fbfbfb;
+}
+
+header {
+  background-color: #1A535C;
+  color: white;
+  text-align: center;
+  padding: 20px 60px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  color: #a1a0a2;
+  padding: 0 25px 30px 25px;
+}
+
+form {
+  padding: 10px 20px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  text-align: left;
+  font-size: 25px;
+  font-weight: 400;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  color: #a2a1a0;
+  padding: 5px 0 20px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  border: none;
+  font-size: 20px;
+  font-weight: normal;
+  height: 70px;
+  margin: 0;
+  padding: 0 20px;
+  width: 100%;
+  background-color: #efeff1;
+  color: #a2a1a0;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+input:focus {
+  outline: none;
+  border: 3px solid #1A535C;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+select:focus {
+  outline: none;
+  border: 3px solid #1A535C;
+  border-radius: 5px;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+select {
+  font-size: 20px;
+  color: #a2a1a0;
+}
+
+input::placeholder {
+  text-align: right;
+  color: #c1c6c7;
+  font-size: 15px;
+  font-style: italic;
+}
+
+#zip {
+	width: 50%;
+}
+
+textarea::placeholder {
+  color: #c1c6c7;
+  font-size: 15px;
+  font-style: italic;
+}
+
+textarea {
+  resize: none;
+  min-height: 150px;
+  padding-top: 20px;
+}
+
+textarea:focus {
+  outline: none;
+  border: 3px solid #1A535C;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+button {
+  background-color: #1A535C;
+	color: white;
+	text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  font-weight: 600;
+	padding: 25px;
+	border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+footer {
+  padding-bottom: 200px;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+.top-line {
+  height: 8px;
+  background-color: #1A535C;
+  margin: 0 0 4px 0;
+}
+
+.bottom-line {
+  height: 4px;
+  background-color: #1A535C;
+  margin: 0;
+}
+
+.line {
+  height: 4.5px;
+  background-color: #1A535C;
+  margin-top: 20px;
+}
+
+.newsletter {
+  padding-bottom: 5px;
+}
+
+.format {
+  padding-top: 25px;
+  padding-bottom: 0px;
+}
+
+.other {
+  padding: 25px 0;
+}
+
+.checkbox,
+.radio {
+  display: inline-block;
+  padding: 5px 0 10px 10px;
+}
+
+.checkbox,
+.radio:hover {
+  cursor: pointer;
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+ .zip-label {
+	 margin-left: 0px;
+	 margin-right: 0px;
+ }
+
+	#zip {
+		max-width: 25%;
+	}
+
+  fieldset .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  fieldset .contact {
+    flex-direction: row;
+  }
+
+  fieldset input,
+  fieldset select {
+    flex-grow: 1;
+    flex-basis: 70%;
+  }
+
+  fieldset label {
+    flex-basis: 30%;
+    margin: 0 auto;
+  }
+
+  header {
+    padding: .1px;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  label {
+    display: flex;
+    flex-basis: 20%;
+    align-items: center;
+  }
+
+  .checkbox,
+  .radio {
+    padding-top: 0px;
+  }
+
+  .format {
+    padding-bottom: 5px;
+  }
+
+  .other {
+    padding-bottom: 25px;
+  }
+
+  footer {
+    padding: 40px 0 200px;
+  }
+
+}

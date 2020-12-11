@@ -1,0 +1,195 @@
+
+/* =================== */
+/*     Base Styles     */
+/* =================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #505050;
+}
+
+h1 {
+  font-size: 20px;
+  color: #505050;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 12px;
+  margin: 8px 0;
+  color: grey;
+}
+
+/* =================== */
+/*     Grid System     */
+/* =================== */
+
+body {
+  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+  background-color: #fafafa;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-areas:
+        "header"
+        "main";
+}
+
+header {
+  grid-area: header;
+  margin: 25px auto;
+  margin-bottom: 0;
+  text-align: center;
+  width: 90%;
+}
+
+main {
+  grid-area: main;
+  width: 90%;
+  margin: 25px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 25px;
+  padding: 0 25px;
+}
+
+/* =================== */
+/*     Card Layout     */
+/* =================== */
+
+.card {
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #e8e8e8;
+  border-radius: 7px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+
+/* =================== */
+/*    Modal Overlay    */
+/* =================== */
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4)
+}
+
+.modal {
+  width: 300px;
+  margin: 15% auto auto;
+  left: 25%;
+  position: fixed;
+  float: left;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: #fff;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.modal h2 {
+  margin-top: 12px;
+}
+
+.modal hr {
+  margin: 25px 0;
+}
+
+.modal-info p {
+  margin-top: 15px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  background-color: white;
+  padding: 2px 5px;
+}
+
+/* =================== */
+/*    Media Queries    */
+/* =================== */
+
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 55px;
+  }
+
+  h1 {
+    text-align: left;
+    margin: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  main {
+    margin: 0 auto;
+    padding: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  }
+
+  .card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+  }
+
+  .card .text-container {
+    padding-left: 20px;
+  }
+
+  .modal {
+    top: 30%;
+  }
+}
+
+@media(min-width: 1024px) {
+  header {
+    margin: 50px 0 0 32px;
+  }
+
+  .modal {
+    top: 20%;
+  }
+}
